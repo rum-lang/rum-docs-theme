@@ -1,8 +1,8 @@
 {% extends "classic/layout.html" %}
 
 {% block rootrellink %}
-    <li><img src="{{ pathto('_static/' + theme_root_icon, 1) }}" alt=""
-             style="vertical-align: middle; margin-top: -1px"/></li>
+    {# <li><img src="{{ pathto('_static/' + theme_root_icon, 1) }}" alt=""
+	    style="vertical-align: middle; margin-top: -1px"/></li> #}
     <li><a href="{{theme_root_url}}">{{theme_root_name}}</a>{{ reldelim1 }}</li>
     {% if theme_root_include_title %}
     <a href="{{ pathto('index') }}">{{ shorttitle }}</a>{{ reldelim1 }}
@@ -36,7 +36,7 @@
 {% endblock %}
 
 {% block extrahead %}
-    <link rel="shortcut icon" type="image/png" href="{{ pathto('_static/' + theme_root_icon, 1) }}" />
+    {# <link rel="shortcut icon" type="image/png" href="{{ pathto('_static/' + theme_root_icon, 1) }}" /> #}
     {% if builder != "htmlhelp" %}
     {% if not embedded %}<script type="text/javascript" src="{{ pathto('_static/copybutton.js', 1) }}"></script>{% endif %}
     {% endif %}
@@ -46,9 +46,6 @@
 {% block footer %}
     <div class="footer">
     &copy; <a href="{{ pathto('copyright') }}">{% trans %}Copyright{% endtrans %}</a> {{ copyright|e }}.
-    <br />
-
-    {% include "footerdonate.html" %}
     <br />
 
     {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}

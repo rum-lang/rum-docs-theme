@@ -1,17 +1,19 @@
-Python Docs Sphinx Theme
+Rum Docs Sphinx Theme
 =========================
 
-This is the theme for the Python documentation.
+This is the theme for the Rum documentation.
 
-Note that when adopting this theme, you're also borrowing an element of the
-trust and credibility established by the CPython core developers over the
-years. That's fine, and you're welcome to do so for other Python community
-projects if you so choose, but please keep in mind that in doing so you're also
-choosing to accept some of the responsibility for maintaining that collective
-trust.
+It is a fork of `python-docs-theme <https://github.com/python/python-docs-theme>`_, with
+modifications to suit the Rum programming language.
 
-To use the theme, install it into your docs build environment via ``pip`` 
-(preferably in a virtual environment).
+The forked version of :code:`python-docs-theme` is licensed under the Python Software
+Foundation License (PSFL). Any modifications made are licensed under the Mozilla Public
+License, version 2 (MPL 2.0).
+
+Copies of the PSFL and the MPL 2.0 are included with this project at :code:`LICENSE_PSFL`
+and :code:`LICENSE_MPL` respectively.
+
+To use this theme:
 
 1. Create and activate a virtual environment::
 
@@ -20,4 +22,4 @@ To use the theme, install it into your docs build environment via ``pip``
 
 2. Install python-docs-theme using `pip`::
     
-    (env)$ python -m pip install python-docs-theme
+    (env)$ python -m pip install rum-docs-theme
